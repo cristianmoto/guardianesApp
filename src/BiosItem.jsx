@@ -1,6 +1,6 @@
 import React from "react";
 import {View, Image, StyleSheet} from 'react-native';
-import StyledText from "../../../Again/uno/src/componentes/StyledText";
+import StyledText from "../src/StyledText";
 
 const BioStats = (props) => (
     <View style={{flexDirection:'row', justifyContent: 'space-around'}}>
@@ -17,7 +17,7 @@ const BiosItem = (props) => (
       <StyledText color="secondary">Especie: {props.especie}</StyledText>
       <StyledText color="secondary">Poder: {props.poder}</StyledText>
       </StyledText>
-      <RepoStats {...props}/>
+      <BioStats {...props}/>
     </View>
   );
   const styles = StyleSheet.create({
