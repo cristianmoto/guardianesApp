@@ -6,7 +6,7 @@ export default[
         edad: 39,
         img: 'https://ibb.co/ZSLJhgw',
         peliculas: 5,
-        habilidades: "Experto en el uso de armas de fuego",
+        poder: "Experto en el uso de armas de fuego",
         
       },
       {
@@ -16,7 +16,7 @@ export default[
          edad: 33,
         img: 'https://ibb.co/fpCvFrz ',
         peliculas: 3,
-        habilidades: "Experta en combate cuerpo a cuerpo",
+        poder: "Experta en combate cuerpo a cuerpo",
          
       },
       {
@@ -26,7 +26,7 @@ export default[
         edad: 6,
         img: 'https://ibb.co/XZNkTRc',
         peliculas: 3,
-        habilidades: "Fuerza y resistencia sobrehumanas",
+        poder: "Fuerza y resistencia sobrehumanas",
          
       },
       {
@@ -36,7 +36,7 @@ export default[
         edad: 5,
         img: 'https://ibb.co/0jFm1cX ',
         peliculas: 5,
-        habilidades: "Experto en armas y tecnología",
+        poder: "Experto en armas y tecnología",
          
       },
       {
@@ -46,7 +46,7 @@ export default[
         edad: 12,
         img: 'https://ibb.co/jWB9Dgm',
         peliculas: 3,
-        habilidades: "Regeneración acelerada",
+        poder: "Regeneración acelerada",
          
       }
     ]

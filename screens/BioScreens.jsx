@@ -1,11 +1,18 @@
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet, Text,FlatList} from 'react-native';
+import data from '../../../Again/uno/src/componentes/data';
+import BiosItem from '../src/BiosItem';
+
+
 
 const BioScreens = () => {
     return (
-        <View>
-            <Text>Personajes</Text>
-        </View>
+     <FlatList 
+        data={data}
+        renderItem={({item:props})=>(
+            <BiosItem {...props}/>
+        )}
+        />
     );
 }
 
