@@ -1,0 +1,10 @@
+{
+    "tailwindCSS.rootFontSize": 10,
+    "scm.inputFontSize": 10,
+    "editor.fontSize": 10,
+    "screencastMode.fontSize": 20,
+    "debug.console.fontSize": 8,
+    "markdown.preview.fontSize": 10,
+    "terminal.integrated.fontSize": 8,
+    "interactiveSession.editor.fontSize": 8
+}

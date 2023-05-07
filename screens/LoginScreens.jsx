@@ -4,10 +4,13 @@ import { StatusBar } from 'expo-status-bar';
 import {useFonts} from 'expo-font';
 const LoginScreens = () => {
 
-    const [fontsLoaded] = useFonts ({
-        guardian: require('../assets/fonts/Guardians.ttf'),
-       
+
+
+    const [fontsLoaded] = useFonts({
+      Bruno: require('../assets/fonts/Bruno.ttf'),
+      Guardians: require('../assets/fonts/Guardians.ttf'),
     });
+  
     if (!fontsLoaded) {
       return null;
     }
@@ -18,7 +21,9 @@ const LoginScreens = () => {
               <Text style={styles.title2}>de la</Text>
               <Text style={styles.title}>Galaxia</Text>
               <Text style={styles.subtitle}>Inicia con tu cuenta</Text>
+              <Text  style={styles.texto}>E-mail</Text>
               <TextInput style={styles.Input} placeholder ="yo@guardianes.com"></TextInput>
+              <Text  style={styles.texto}>Constraseña</Text>
               <TextInput style={styles.Input} placeholder="Password"></TextInput>
              
               <StatusBar style="auto" />
@@ -30,7 +35,7 @@ const LoginScreens = () => {
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: 'darkslateblue',
+      backgroundColor: '#001623',
       justifyContent: "center",
       alignItems: "center",
     },
@@ -38,8 +43,8 @@ const styles = StyleSheet.create({
       fontSize: 40,   
       justifyContent: 'center',
       alignItems: 'center',
-      fontFamily: 'guardian',
-      color: 'orangered',
+      fontFamily: ' Guardians',
+      color: '#daa520',
       textShadowColor: '#fff',
       textShadowOffset: { width: 0.8, height: 0.7 },
       textShadowRadius: 2,
@@ -47,12 +52,17 @@ const styles = StyleSheet.create({
      
   
     },
+    texto:{
+      color: '#f2f2f2',
+      fontSize: 20,
+      fontFamily: 'Bruno',
+    },
     title2: {
       fontSize: 20,
-      fontFamily: 'guardian',
+      fontFamily: ' Guardians',
       justifyContent: 'center',
       alignItems: 'center',
-      color: 'orangered',
+      color:'#daa520',
       textShadowColor: '#fff',
       textShadowOffset: { width: 0.8, height: 0.7 },
       textShadowRadius: 2,
@@ -67,7 +77,7 @@ const styles = StyleSheet.create({
       height: 50,
       color: 'darkseagreen',
       fontWeight: 'normal',
-      borderRadius: 30,
+      borderRadius: 10,
       width: '80%',
       backgroundColor: '#fff',
       marginTop: 20,
